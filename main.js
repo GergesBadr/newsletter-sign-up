@@ -3,7 +3,8 @@ const newsletter = document.querySelector(".newsletter"),
   inputHolder = document.querySelector(".input-holder"),
   input = document.querySelector(".email-input"),
   submitBtn = document.getElementById("submit-btn"),
-  dismissMsg = document.getElementById("dismiss-msg");
+  dismissMsg = document.getElementById("dismiss-msg"),
+  typedEmail = document.querySelector(".typed-email");
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -20,6 +21,7 @@ dismissMsg.addEventListener("click", () => {
 function showSuccess() {
   newsletter.classList.add("hide");
   successPopup.classList.add("show");
+  typedEmail.textContent = input.value;
 }
 
 function isEmail(emailAdress) {
