@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Newsletter sign-up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="newsletter">
+      <div class="content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="benefits">
+          <li class="item">
+            <img src="images/icon-list.svg" alt="circle check mark" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="item">
+            <img src="images/icon-list.svg" alt="circle check mark" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="item">
+            <img src="images/icon-list.svg" alt="circle check mark" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+        <form action="" class="subscribe-from">
+          <div class="input-holder">
+            <span class="invalid-message">Valid email required</span>
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+              autocomplete="email"
+              class="email-input"
+            />
+          </div>
+          <button type="submit" class="main-btn" id="submit-btn">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <div class="image"></div>
+    </div>
+    <div class="success-popup">
+      <img src="images/icon-success.svg" alt="circle check mark" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span class="typed-email">ash@loremcompany.com. </span> Please open it
+        and click the button inside to confirm your subscription.
+      </p>
+      <button class="main-btn" id="dismiss-msg">Dismiss message</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
